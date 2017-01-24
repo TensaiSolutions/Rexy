@@ -149,9 +149,9 @@ public final class Regex {
 
       let replacedEndIndex = replaced.utf8.index(replaced.utf8.startIndex, offsetBy: replacedOffset)
 
-      replaced = String(replaced.utf8[replaced.utf8.startIndex ..< replacedEndIndex])
+      replaced = String(describing: replaced.utf8[replaced.utf8.startIndex ..< replacedEndIndex])
       output += replaced
-      string = String(string.utf8[startIndex ..< endIndex])
+      string = String(describing: string.utf8[startIndex ..< endIndex])
     }
 
     return output + string
