@@ -31,7 +31,7 @@ public final class Regex {
     let result = regcomp(&compiledPattern, pattern, flags.rawValue)
 
     guard result == 0 else {
-      throw Error(result: result, compiledPattern: compiledPattern)
+      throw RexyError(result: result, compiledPattern: compiledPattern)
     }
   }
 
