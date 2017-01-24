@@ -7,7 +7,7 @@
 /**
  Representation of Regular Expression error.
  */
-public struct Error: ErrorProtocol, CustomStringConvertible {
+public struct Error: Error, CustomStringConvertible {
 
   /// Error description.
   public let description: String
